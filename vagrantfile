@@ -1,0 +1,47 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+
+Vagrant.configure("2") do |config|
+  config.vm.define "batata" do |batata|
+  batata.vm.box = "debian/buster64"
+  batata.vm.hostname = "batata"
+  batata.vm.network "private_network", ip: "10.150.100.254"
+
+  batata.vm.provider "virtualbox" do |v|
+  v.memory = 512
+  v.cpus = 1
+  v.name = "batata"
+    end
+  end
+end
+
+
+Vagrant.configure("2") do |config|
+  config.vm.define "pure" do |pure|
+  pure.vm.box = "debian/buster64"
+  pure.vm.hostname = "pure"
+  pure.vm.network "private_network", ip: "10.150.100.252"
+
+  pure.vm.provider "virtualbox" do |v|
+  v.memory = 512
+  v.cpus = 1
+  v.name = "pure"
+    end
+  end
+end
+
+
+Vagrant.configure("2") do |config|
+  config.vm.define "cafe" do |cafe|
+  cafe.vm.box = "debian/buster64"
+  cafe.vm.hostname = "cafe"
+  cafe.vm.network "private_network", ip: "10.150.100.250"
+
+  cafe.vm.provider "virtualbox" do |v|
+  v.memory = 512
+  v.cpus = 1
+  v.name = "cafe"
+    end
+  end
+end
