@@ -1,9 +1,9 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 vms = {
-'gandalf' => {'memory' => '512', 'cpus' => '1', 'ip' => '10', 'box' => 'debian/bookworm64',},
-'bilbo' => {'memory' => '512', 'cpus' => '1', 'ip' => '11', 'box' => 'debian/bookworm64'},
-'frodo' => {'memory' => '512', 'cpus' => '1', 'ip' => '12', 'box' => 'debian/bookworm64'}
+'gandalf' => {'memory' => '512', 'cpus' => '1', 'ip' => '10', 'box' => 'generic/ubuntu2004',},
+'bilbo' => {'memory' => '512', 'cpus' => '1', 'ip' => '11', 'box' => 'generic/ubuntu2004'},
+'frodo' => {'memory' => '512', 'cpus' => '1', 'ip' => '12', 'box' => 'generic/ubuntu2004'}
 }
 
 Vagrant.configure('2') do |config|
