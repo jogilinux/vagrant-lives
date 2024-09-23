@@ -13,8 +13,11 @@ echo \
 
 sudo apt update
 
+## install docker 
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
+
+## docker compose v2
 sudo rm /usr/local/bin/docker-compose
 
 sudo ln -s /Applications/Docker.app/Contents/Resources/cli-plugins/docker-compose /usr/local/bin/docker-compose
